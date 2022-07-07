@@ -4,6 +4,6 @@ $senha = '';
 $database = 'animelist';
 $host = 'localhost';
 
-$mysqli = new mysqli($host, $usuario, $senha, $database);
+$conexao = mysqli_connect($host, $usuario, $senha, $database) or die ("Não foi possivel fazer a conexão ao MySQL");
 
 
